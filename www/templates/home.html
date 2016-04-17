@@ -1,0 +1,128 @@
+ <ion-view title="Home" id="page1" style="background-color:#F5F6FD;">
+    <ion-content padding="false" class="has-header">
+
+      <div class="bluelight bc">
+      <img class="img-circle" src="img/profilePic.jpg">
+      <h1 class="middle">Noe Miniel</h1>
+      <hr>
+</div>
+      <div class="card">
+      <div class=" center ">
+
+      </div>
+
+
+        <ion-item class="item-thumbnail-left item-button-right" ng-click="showthis1()">
+          <img src="img/7KdTia2vRX2zXmpQSwcn_Bank of America.png">
+          <button ng-click="goToChase()" class="button button-clear">
+            <i class="icon ion-gear-b"></i>
+          </button>
+
+          <h2>Bank Of America</h2>
+          <p><b>Disposible Card</b></p>
+          <p class="alignright">You have ${{d1}} </p>
+        </ion-item>
+        <div ng-show="myValue1" class="ng-hide">
+          <div class="item item-input-inset" >
+
+              <input type="number"   style="width: 70%" placeholder="$0.00">
+            <button class="button  button-full">
+              <i class="icon ion-search placeholder-icon"></i>Submit
+            </button>
+          </div>
+          </div>
+
+          <div></div>
+      </div>
+      <div class="button-bar">
+        <a ui-sref="dashboard" id="home-button3" class="button button-positive  button-block">Dashboard</a>
+        <hr>
+        <a ui-sref="login" id="home-button4" class="button button-positive  button-block">Lock it</a>
+      </div>
+
+          <!--NED-->
+<div class="paddingp">
+      <form class="list" >
+        <div class="item item-divider">
+      My Cards
+        </div>
+
+        <ion-item class="item-thumbnail-left  item-button-right" ng-click="showthis2()">
+          <img src="img/Oum1btQnu6b2Vv8htigN_TD Bank.png">
+
+          <button onclick="goToTB" class="button button-clear">
+            <i class="icon ion-gear-b"></i>
+          </button>
+
+          <h2>TD Bank- Sara card</h2>
+          <p>Checking <b>Total: ${{c1}}</b></p>
+
+        </ion-item>
+
+
+          <div ng-show="myValue2" class="ng-hide">
+            <div class="item item-input-inset" >
+
+              <input type="number"  ng-model="amount"  style="width: 70%" placeholder="$0.00">
+              <button  ng-click="showConfirm(amount)" class="button  button-full">
+                <i class="icon ion-chevron-up placeholder-icon"></i>Submit
+              </button>
+            </div>
+          </div>
+
+          <!--NED-->
+
+          <ion-item class="item-thumbnail-left item-button-right"  ng-click="showthis3()">
+          <img src="img/RauBvOvtT6L0IJ2DP2sj_Chase.jpg">
+
+            <button ng-click="goToChase()" class="button button-clear">
+              <i class="icon ion-gear-b"></i>
+            </button>
+
+          <h2>Chase Bank-My blue card</h2>
+          <p>Credit Card <b>Total: ${{c2}}</b></p>
+        </ion-item>
+
+
+          <div ng-show="myValue3" class="ng-hide">
+            <div class="item item-input-inset" >
+
+              <input type="number"   style="width: 70%" placeholder="$0.00">
+              <button class="button  button-full">
+                <i class="icon ion-chevron-up  placeholder-icon"></i>Submit
+              </button>
+            </div>
+          </div>
+          <!--NED-->
+
+        <ion-item class="item-thumbnail-left item-button-right" ng-click="showthis4()">
+          <img src="img/DGx2I4OTEicACHOXMeiA_Wells Fargo.jpg">
+
+          <button onclick="goToWF" class="button button-clear">
+            <i class="icon ion-gear-b"></i>
+          </button>
+          <h2>Wells Fargo-My Son</h2>
+          <p>Savings <b>Total: ${{c1}}</b></p>
+        </ion-item>
+          <div ng-show="myValue4" class="ng-hide">
+            <div class="item item-input-inset" >
+
+              <input type="number"   style="width: 70%" placeholder="$0.00">
+              <button class="button  button-full">
+                <i class="icon ion-chevron-up placeholder-icon"></i>Submit
+              </button>
+            </div>
+          </div>
+
+<h3 ><b> Your Total is:</b> ${{total}}</h3>
+        </form>
+
+
+      <div class="button-bar">
+        <a ui-sref="setting" id="home-button5" class="button button-positive  button-block">Setting</a>
+        <a ui-sref="single" id="home-button6" class="button button-positive  button-block">Single</a>
+        <a ui-sref="about" id="home-button7" class="button button-positive  button-block">Messages</a>
+      </div>
+ </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,48 @@
+<ion-view title="Single" id="page5">
+    <ion-content padding="true" class="has-header">
+      <h1>{{who}}</h1>
+      <hr>
+      <h2>Rules</h2>
+      <ul class="list">
+<div class="card">
+
+
+        <li class="item item-toggle">
+          Parent Control
+          <label class="toggle toggle-assertive">
+            <input type="checkbox">
+            <div class="track">
+              <div class="handle"></div>
+            </div>
+
+          </label>
+        </li>
+  <p>Alcholic purchases will not be allow in this card and you will be notify of any activity on this card.</p>
+</div>
+        <div class="card">
+
+
+          <li class="item item-toggle">
+            Location Control
+            <label class="toggle toggle-assertive">
+              <input type="checkbox">
+              <div class="track">
+                <div class="handle"></div>
+              </div>
+
+            </label>
+          </li>
+          <p>Only purchases around this <b>zipcode</b> will be allow</p>
+
+          <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+              <input type="text" placeholder="zipcode">
+            </label>
+          </div>
+        </div>
+      </ul>
+      <button  ng-model="gotohome" class="button button-block button-energized">
+     Save Changes
+      </button>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,60 @@
+/* Empty. Add your own CSS if you like */
+.bluelight{
+  padding: 0;
+  margin: 0;
+  background: yellow;
+}
+.responsibleIMG{
+
+  width: 100%;
+}
+
+.img-circle {
+border-radius: 50%;
+  width: 25%;
+  margin-left: 40%;
+margin-right: 40%;
+}
+
+
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+
+bar.bar-custom,
+bar.bar-custom .bar.bar-positive,
+.bar-custom .nav-bar-block ion-header-bar {
+  border-color: #FF71n48;
+  background-color: #FF7148;
+  background-image: linear-gradient(0deg, #FF7148, #FF7148 50%, transparent 50%);
+  height: 45px;
+}
+
+.lightblue{
+
+  background-color: #0a9dc7;
+
+}
+
+
+
+.background, .background .pane, .background .item, .background .item-complex .item-content {
+  background-color: #F5FFFF;
+
+}
+.middle{
+
+text-align: center;
+  color: whitesmoke}
+
+.paddingp{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.bc{
+
+  background-color: #87ddff;
+}
